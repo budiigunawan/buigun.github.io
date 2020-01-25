@@ -5,8 +5,10 @@ body {
 header {
     padding : 72px;
     text-align: center;
-    color: whitesmoke;
-    background-color: black;
+    background-image: url(img/headerbackground.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 header img {
@@ -35,10 +37,10 @@ header h1 {
   /* Style the navigation bar links */
   .navbar a {
     float: left; /* Make sure that the links stay side-by-side */
-    display: block; /* Change the display to block, for responsive reasons (see below) */
+    display: inline-block; /* Change the display to block, for responsive reasons (see below) */
     color: white; /* White text color */
     text-align: center; /* Center the text */
-    padding: 14px 20px; /* Add some padding */
+    padding: 16px 28px; /* Add some padding */
     text-decoration: none; /* Remove underline */
   }
   
@@ -64,27 +66,37 @@ header h1 {
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
-    -ms-flex: 20%;
-    flex: 20%; /* Set the width of the sidebar */
+    -ms-flex: 30%;
+    flex: 30%; /* Set the width of the sidebar */
     background-color: #f1f1f1; /* Grey background color */
     padding: 20px; /* Some padding */
   }
   
   /* Main column */
   .konten {
-    -ms-flex: 80%;
-    flex: 80%; /* Set the width of the main content */
+    -ms-flex: 70%;
+    flex: 70%; /* Set the width of the main content */
     background-color: white; /* White background color */
-    padding: 20px; /* Some padding */
+    padding: 24px 64px;
+  }
+
+  article p {
+    text-indent: 30px;
+    text-align: justify;
+  }
+
+  .fakeimg {
+    background-image: url(img/banner.png);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 20px;
   }
 
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
     main {
-      flex-direction: column;
-    }
-
-    header {
       flex-direction: column;
     }
   }
@@ -94,6 +106,10 @@ header h1 {
     .navbar a {
       float: none;
       width: 100%;
+    }
+
+    .konten {
+      padding : 24px;
     }
   }
 

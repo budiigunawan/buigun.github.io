@@ -1,15 +1,30 @@
+body {
+  margin: 0;
+}
+
 header {
-    padding : 80px;
+    padding : 72px;
     text-align: center;
-    background: #1abc9c;
-    color: white;
+    color: whitesmoke;
+    background-color: black;
+}
+
+header img {
+  margin: auto;
 }
 
 header h1 {
     font-size: 40px;
+    margin : 16px auto;
 }
 
+.head-1 {
+  color: #A89C0A;
+}
 
+.head-2 {
+  color: whitesmoke;
+}
 
 /* Style the top navigation bar */
 .navbar {
@@ -25,11 +40,6 @@ header h1 {
     text-align: center; /* Center the text */
     padding: 14px 20px; /* Add some padding */
     text-decoration: none; /* Remove underline */
-  }
-  
-  /* Right-aligned link */
-  .navbar a.right {
-    float: right; /* Float a link to the right */
   }
   
   /* Change color on hover/mouse-over */
@@ -54,21 +64,27 @@ header h1 {
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
-    flex: 30%; /* Set the width of the sidebar */
-    background-color: skyblue; /* Grey background color */
+    -ms-flex: 20%;
+    flex: 20%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
     padding: 20px; /* Some padding */
   }
   
   /* Main column */
   .konten {
-    flex: 70%; /* Set the width of the main content */
-    background-color: pink; /* White background color */
+    -ms-flex: 80%;
+    flex: 80%; /* Set the width of the main content */
+    background-color: white; /* White background color */
     padding: 20px; /* Some padding */
   }
 
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
     main {
+      flex-direction: column;
+    }
+
+    header {
       flex-direction: column;
     }
   }
@@ -84,5 +100,6 @@ header h1 {
   .footer {
     padding: 20px; /* Some padding */
     text-align: center; /* Center text*/
-    background: #ddd; /* Grey background */
+    color: #A89C0A;
+    background-color: black; /* Grey background */
   }

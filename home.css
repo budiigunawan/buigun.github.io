@@ -131,6 +131,7 @@ header h1 {
 
   .konten img {
     width: 100%;
+    height: 320px;
     display: block;
     margin: 16px auto;
   }

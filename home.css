@@ -128,18 +128,8 @@ header h1 {
     margin: 16px auto;
   }
 
-  .fakeimg {
-    background-image: url(img/banner.png);
-    background-size: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding: 20px;
-  }
-
   .konten img {
     width: 100%;
-    height: 80%;
     display: block;
     margin: 16px auto;
   }
@@ -185,21 +175,21 @@ header h1 {
     right: 0;
   }
 
-  .popimg {
-    background-image: url(img/banner.png);
-    background-size: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
+  .popular img {
     width: 100%;
-    padding: 20px;
+    height: 120px;
+    display: block;
+    margin: 16px auto;
+    margin-bottom: 0;
   }
 
-  .popimg p {
+  .popular p {
     text-align: center;
     margin: 0px auto;
-    color: white;
-    background: #222831;
+    color: whitesmoke;
+    background: #00AEEB;
     opacity: 0.75;
+    margin: 0;
   }
 
 @media screen and (max-width: 700px) {

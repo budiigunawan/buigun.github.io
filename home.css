@@ -206,8 +206,16 @@ header h1 {
       width: 100%;
     }
 
-    .fakeimg {
-      padding: 0;
+    .konten {
+      padding: 18px 32px;
+    }
+
+    .konten article {
+      padding: 8px;
+    }
+
+    .konten img {
+      height: 160px;
     }
   }
 
